@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 const bcrypt = require('bcrypt');
-const Stock = require('./Stock');
 
 const userSchema = new Schema({
   firstName: {
@@ -30,8 +29,7 @@ const userSchema = new Schema({
     type: String,
     required: true,
     minlength: 8
-  },
-  stocks: [Stock.Schema]
+  }
 });
 
 userSchema.pre('save', async function(next) {
