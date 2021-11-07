@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>8-Ball Trading</title>
+</head>
+<body>
+<!-- NAVBAR -->
+    <nav class="teal" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">8-Ball Trading</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+    
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+<!-- FIRST PARALLAX -->
+    <div id="index-banner" class="parallax-container">
+<!-- FIRST PARALLAX - OVERLAY -->
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center teal-text text-lighten-1">Welcome to 8-Ball Trading!</h1>
+            <br><br>
+            <div class="row center">
+              <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Login / Signup</a>
+            </div>
+            <br><br>
+          </div>
+        </div>
+<!-- FIRST PARALLAX -->
+        <div class="parallax"><img src="./Stockpic1.jpg" alt="Unsplashed background img 1" class="responsive-img"></div>
+    </div>
+<!-- MIDDLE BANNER -->
+    <!-- <div class="container">
+    <div class="section">
+        <div class="row">
+        <div class="col s12 m4">
+            <div class="icon-block">
+            <h2 class="center brown-text"><i class="large material-icons">attach_money</i></h2>
+            <h5 class="center">New to Investing?</h5>
+            <p class="light">We provide all users with easy access to look at basic information on well-earning stocks as well as safe, low-volatility stocks. There's also an option for you track and view stocks with higher volatility with our ever-evolving AI.</p>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="icon-block">
+            <h2 class="center brown-text"><i class="large material-icons">bookmark</i></h2>
+            <h5 class="center">Think you know better?</h5>
+            <p class="light">Are you an investing Wizard who knows better than me and my AI? That's great! In addition to the default tickers we keep track of for you, you can track your own list as well. If you decide to invest through the application, our AI will only get smarter by learning from your positions.</p>
+            </div>
+        </div>
+        <div class="col s12 m4">
+            <div class="icon-block">
+            <h2 class="center brown-text"><i class="large material-icons">timeline</i></h2>
+            <h5 class="center">Not looking to Invest?</h5>
+            <p class="light">Investing through the application is completely optional. If you are looking to maybe get into investing in the Stock Market, or are just curious for more information, we're here to help whatever your level is.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div> -->
+<!-- MIDDLE BANNER - LOGIN/SIGNUP -->
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href="#Login">Login</a></li>
+                        <li class="tab col s3"><a class="active" href="#Signup">Signup</a></li>
+                    </ul>
+                </div>
+                <div id="Login" class="col s12">
+                    <div class="row">
+                        <form id="frm_Login" class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="user_email" type="email" class="validate">
+                                    <label for="user_email">Email Address</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="user_pw" type="password" class="validate">
+                                    <label for="user_pw">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Login
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="Signup" class="col s12">
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="user_fname" type="text" class="validate">
+                                    <label for="user_fname">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="user_lname" type="text" class="validate">
+                                    <label for="user_lname">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="user_email" type="email" class="validate">
+                                    <label for="user_email">Email Address</label>
+                                    <span class="helper-text" data-error="Please Enter a Valid Email Address"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                <input id="user_pw" type="password" class="validate">
+                                <label for="user_pw">Password</label>
+                                <span class="helper-text" data-error="Please Enter a Valid Password"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                <input id="user_alpaca" type="password" class="validate">
+                                <label for="user_alpaca">Alpaca API Key</label>
+                                <span class="helper-text" data-error="Please Enter a Valid Alpaca API Key"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Signup
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- SECOND PARALLAX -->
+    <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+        <div class="container">
+        <div class="row center">
+            <h5 class="header col s12 light"></h5>
+        </div>
+        </div>
+    </div>
+    <div class="parallax"><img src="./Stockpic1.jpg" alt="Unsplashed background img 2" class="responsive-img"></div>
+    </div>
+<!-- FOOTER -->
+    <footer class="page-footer teal">
+    <div class="container">
+        <div class="row">
+        <div class="col l6 s12">
+            <h5 class="white-text">About Me</h5>
+            <p class="grey-text text-lighten-4">I'm but a humble student trying to make a name for myself in Software Development.  If you like my work, please reach out and connect with me.  I'm open to all feedback and ideas, and opportunities to find work.  Please enjoy this, my first full MERN stack application</p>
+        </div>
+        <div class="col l3 s12">
+            <h5 class="white-text">Contact Me</h5>
+            <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/shobair-abidi/">LinkedIn</a></li>
+            <li><a class="white-text" href="mailto:shobair.abidi@gmail.com">Email</a></li>
+            <li><a class="white-text" href="https://github.com/shobes572">Github</a></li>
+            </ul>
+        </div>
+        <div class="col l3 s12">
+            <h5 class="white-text">Powered By</h5>
+            <ul>
+            <li><a class="white-text" href="https://materializecss.com/">MaterializeCSS</a></li>
+            <li><a class="white-text" href="https://alpaca.markets/">Alpaca</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+        Made by Shobair Abidi
+        </div>
+    </div>
+    </footer>
+<!-- JAVASCRIPT -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script lang="js">
+        $(document).ready(() => {
+            $('.parallax').parallax();
+            $('.sidenav').sidenav();
+            $('.tabs').tabs();
+        })
+    </script>
+</body>
+</html>
