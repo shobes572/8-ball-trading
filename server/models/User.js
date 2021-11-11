@@ -14,7 +14,7 @@ const userSchema = new Schema({
     required: true,
     trim: true
   },
-  alpacaAPI: {
+  alpacaKey: {
     type: String,
     required: false,
     trim: true,
