@@ -8,4 +8,4 @@ mongoose.connect(process.env.MONGODB_URI, {
   useFindAndModify: false
 });
 
-module.exports = mongoose.connection;
+export default mongoose.connection;
