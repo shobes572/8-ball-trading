@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body div {
+    flex: 1 0 auto;
+}
+
+#dashboardMain {
+    display: flex;
+    min-height: 60vh;
+    flex-direction: row;
+}
+
+#dashboardRSBar {
+    flex: 1 0 auto;
+}
