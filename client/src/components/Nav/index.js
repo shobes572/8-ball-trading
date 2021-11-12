@@ -6,8 +6,7 @@ import { Link } from "react-router-dom";
 function Nav() {
   init();
   function showNavigation() {
-    if (true) {
-    // if (Auth.loggedIn()) {
+    if (Auth.loggedIn()) {
       return (
         <ul className="flex-row">
           <li className="mx-1">
@@ -22,7 +21,7 @@ function Nav() {
       return (
         <ul className="flex-row">
           <li className="mx-1">
-            <Link to="/login">Login / Signup</Link>
+            <a href="/login">Login / Signup</a>
           </li>
         </ul>
       );
