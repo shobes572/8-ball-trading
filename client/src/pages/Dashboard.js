@@ -1,7 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import init from '../utils/materializeInit';
 
 const Dashboard = () => {
+    init();
     return (
         <div class="section">
         <div id="dashboardMain" class="row">
@@ -24,7 +26,6 @@ const Dashboard = () => {
     MYLIST
                 </div>
             </div>
-
         </div>
     </div>
     );
