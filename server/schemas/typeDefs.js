@@ -12,10 +12,6 @@ const typeDefs = gql`
     email: String
   }
 
-  type Checkout {
-    session: ID
-  }
-
   type Auth {
     token: ID
     user: User
@@ -23,11 +19,12 @@ const typeDefs = gql`
 
   type Query {
     user: User
+    stock: Stock
   }
 
   type Mutation {
-    addUser(firstName: String!, lastName: String!, email: String!, password: String!): Auth
-    updateUser(firstName: String, lastName: String, email: String, password: String): User
+    addUser(firstName: String!, lastName: String!, email: String!, password: String!, alpacaKey: String, alpacaSecret: String): Auth
+    updateUser(firstName: String, lastName: String, email: String, password: String, alpacaKey: String, alpacaSecret: String): User
     login(email: String!, password: String!): Auth
   }
 `;

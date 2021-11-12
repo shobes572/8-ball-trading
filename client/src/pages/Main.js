@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import init from "../utils/materializeInit";
 
 import Home from './Home';
 import LoginSignup from './Login-Signup';
 import NoMatch from './NoMatch';
 
 const Main = () => {
+    init();
     return (
         <div>
             <div id="index-banner" class="parallax-container">
@@ -33,6 +35,7 @@ const Main = () => {
                 <div class="section no-pad-bot">
                     <div class="container">
                         <div class="row center">
+                            {/* eslint-disable-next-line */}
                             <h5 class="header col s12 light"></h5>
                         </div>
                     </div>

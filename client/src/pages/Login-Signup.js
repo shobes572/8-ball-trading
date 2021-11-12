@@ -111,9 +111,16 @@ function LoginSignup(props) {
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <input id="user_alpaca" type="password" class="validate"onChange={handleChange} />
-                    <label for="user_alpaca">Alpaca API Key</label>
+                    <input id="user_alpaca_key" type="password" class="validate" onChange={handleChange} />
+                    <label for="user_alpaca_key">Alpaca API Key</label>
                     <span class="helper-text" data-error="Please Enter a Valid Alpaca API Key"></span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="user_alpaca_secret" type="password" class="validate" onChange={handleChange} />
+                    <label for="user_alpaca_secret">Alpaca API Secret</label>
+                    <span class="helper-text" data-error="Please Enter a Valid Alpaca Secret"></span>
                   </div>
                 </div>
                 <div class="row">

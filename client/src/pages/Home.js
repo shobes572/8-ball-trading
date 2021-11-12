@@ -1,6 +1,8 @@
 import React from "react";
+import init from "../utils/materializeInit";
 
 const Home = () => {
+  init();
   return (
     <div class="container">
       <div class="section">

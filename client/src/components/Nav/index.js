@@ -38,6 +38,7 @@ function Nav() {
           <ul id="nav-mobile" class="sidenav">
             {showNavigation()}
           </ul>
+          {/* eslint-disable-next-line */}
           <a to="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
